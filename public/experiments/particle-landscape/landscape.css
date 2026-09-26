@@ -1,0 +1,15 @@
+html,body{margin:0;height:100%;overflow:hidden;background:#0e0f13}
+*{box-sizing:border-box}
+#app-shell{display:grid;grid-template-rows:minmax(0,1fr) 30px;height:100svh}
+#app-container{display:flex;min-width:0;min-height:0;overflow:hidden}
+#canvas-container{flex:1;min-width:0;min-height:0;position:relative;overflow:hidden;touch-action:none}
+#canvas-container canvas{display:block;width:100%;height:100%}
+#panel-container.sh-panel{position:relative;inset:auto;flex:0 0 auto;width:320px;max-width:none;height:100%;transition:none}
+#panel-container.sh-panel.collapsed{width:0;min-width:0;border:0}
+.controls-rail{display:flex;justify-content:flex-end;align-items:center;background:#080808;border-top:1px solid #ffffff0f;padding:0 14px}
+#panel-toggle{border:0;background:none;color:#999;font:12px ui-monospace,monospace;cursor:pointer;padding:4px 0}
+#panel-toggle:focus-visible{outline:1px solid #aaa;outline-offset:2px}
+.panel-status{font:12px/1.5 var(--sh-font);color:var(--sh-text-mid);margin:0}
+.panel-status:empty{display:none}
+.panel-source{font:12px/1.5 var(--sh-font);color:var(--sh-text-mid);margin-top:16px}
+@media(max-width:680px){#app-container{flex-direction:column}#panel-container.sh-panel{width:100%;height:42svh;border-left:0;border-top:1px solid var(--sh-border)}#panel-container.sh-panel.collapsed{width:100%;height:0;border:0}}
