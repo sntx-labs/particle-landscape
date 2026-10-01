@@ -1421,7 +1421,7 @@ import * as THREE from 'three';
 
     // Particles folder
     const particlesFolder = pane.folder('Particles & hover', { expanded: true });
-    bind(particlesFolder, params, 'pointSize', { min: 0, max: 0.11, step: 0.01, label: 'Point Size' }).on('change', (ev) => {
+    bind(particlesFolder, params, 'pointSize', { min: 0, max: 1.0, step: 0.01, label: 'Point Size' }).on('change', (ev) => {
       pointMaterial.uniforms.uPointSize.value = ev.value;
     });
     bind(particlesFolder, params, 'jitter', { min: 0.0, max: 0.2, step: 0.001 }).on('change', (ev) => {
