@@ -1,6 +1,6 @@
 # Particle Landscape
 
-Private working repository for [Particle Landscape](https://labs.sntx.co/experiments/particle-landscape/). Updated from Syntax Labs version 54, commit `344f2b112c44fdb66d202c3415560a882d0a273c`, on 2026-10-01.
+Private working repository for [Particle Landscape](https://labs.sntx.co/experiments/particle-landscape/). Updated from Syntax Labs version 55, commit `96cb5f3d80d7a85dfb7244a7ada826dacb47881b`, on 2026-10-01.
 
 ## Run the current Labs version
 
@@ -34,3 +34,7 @@ Keep this repository private until the owner approves publication. No new blanke
 The running website is still deployed separately through Sites. Pushing to this repository does not redeploy or change its public URL.
 
 To prepare runtime assets for the separate authoring snapshot, run `npm run labs:authoring`, then follow the printed npm install/build instructions. The published snapshot remains the reference for current Labs behavior.
+
+## Gallery thumbnail
+
+![Particle Landscape](public/images/work/particle-landscape.png)

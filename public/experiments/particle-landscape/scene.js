@@ -1301,13 +1301,13 @@ import * as THREE from 'three';
     // Parameters object
     const params = {
       // Heightmap
-      terrainColor: '#8a8f9a',
+      terrainColor: '#b1b5be',
       scale: 8.0,
       tileSize: 44,
       tilesX: 5,
       tilesZ: 4,
       // Particles
-      pointSize: 0.08,
+      pointSize: 0.16,
       jitter: 0.02,
       hoverRadius: 1.6,
       hoverStrength: 0.8,
@@ -1321,7 +1321,7 @@ import * as THREE from 'three';
       maskAspect: 1.5,
       viewportWidth: 0.49,
       viewportHeight: 0.43,
-      viewportFeather: 0.22,
+      viewportFeather: 0.5,
       vignette: 0.18,
       // Animation
       scrollSpeed: 3.0,

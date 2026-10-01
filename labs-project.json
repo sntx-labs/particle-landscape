@@ -3,9 +3,10 @@
   "slug": "particle-landscape",
   "repository": "https://github.com/sntx-labs/particle-landscape",
   "liveUrl": "https://labs.sntx.co/experiments/particle-landscape/",
-  "sourceCommit": "344f2b112c44fdb66d202c3415560a882d0a273c",
+  "sourceCommit": "96cb5f3d80d7a85dfb7244a7ada826dacb47881b",
   "importedAt": "2026-09-26",
   "upstream": "taylor-sntx/study-particle-landscape",
   "authoringSnapshot": null,
-  "updatedAt": "2026-10-01"
+  "updatedAt": "2026-10-01",
+  "thumbnail": "public/images/work/particle-landscape.png"
 }
