@@ -1,6 +1,6 @@
 # Particle Landscape
 
-Private working repository for [Particle Landscape](https://labs.sntx.co/experiments/particle-landscape/). Updated from Syntax Labs version 61, commit `ccbb95eb87e6c0631db3430e0836b282220ef1c8`, on 2026-10-03.
+Private working repository for [Particle Landscape](https://labs.sntx.co/experiments/particle-landscape/). Updated from Syntax Labs version 62, commit `c656d1746d091eefbc1013a7e458aa8012f7a52f`, on 2026-10-03.
 
 ## Run the current Labs version
 
