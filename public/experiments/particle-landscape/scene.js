@@ -2130,7 +2130,7 @@ import * as THREE from 'three';
       renderer.render(scene, camera);
     }
     const credit = document.createElement('a');
-    credit.href='https://github.com/taylorallenux/study-particle-landscape';
+    credit.href='https://github.com/sntx-labs/particle-landscape';
     credit.target='_blank'; credit.rel='noopener noreferrer'; credit.textContent='View source on GitHub';
     credit.className='panel-source'; pane._body.append(credit);
     panelContainer.querySelectorAll('.sh-ctrl').forEach(row => {
