@@ -2145,3 +2145,5 @@ import * as THREE from 'three';
       sync();
     });
     animate();
+
+window.LabsMovementHint?.({viewport:canvasContainer,enabled:()=>airplaneState.enabled});

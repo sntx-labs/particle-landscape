@@ -1,0 +1,36 @@
+.labs-movement-host { position: relative; }
+.labs-movement-hint {
+  position: absolute;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 34px);
+  gap: 5px;
+  color: rgba(255, 255, 255, .8);
+  pointer-events: none;
+  user-select: none;
+  opacity: .8;
+  transition: opacity 600ms ease;
+}
+.labs-movement-hint[hidden] { display: none; }
+.labs-movement-hint kbd {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, .46);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .24);
+  font: 400 12px/1 ui-monospace, SFMono-Regular, Consolas, monospace;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+.labs-movement-hint [data-key="w"] { grid-column: 2; }
+.labs-movement-hint [data-key="a"] { grid-column: 1; }
+.labs-movement-hint .is-pressed { border-color: #fff; background: rgba(255, 255, 255, .2); }
+.labs-movement-hint.is-leaving { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .labs-movement-hint, .labs-movement-hint kbd { transition: none; }
+}

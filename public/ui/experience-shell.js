@@ -44,7 +44,11 @@
   const noticeKey='syntax-labs-mobile-performance-ack-v1';
   let acknowledged=false;try{acknowledged=sessionStorage.getItem(noticeKey)==='true';}catch{}
   const mobile=matchMedia('(max-width:680px)').matches||matchMedia('(pointer:coarse)').matches;
-  if(mobile&&!acknowledged){
+  // Project-specific entry screens can choose settings before any scene work starts.
+  if(typeof window.SyntaxLabsEntry?.choose==='function'){
+    loader.hidden=true;
+    window.SyntaxLabsEntry.choose(source,start);
+  }else if(mobile&&!acknowledged){
     loader.hidden=true;
     const notice=document.createElement('dialog');notice.className='mobile-performance-notice';
     notice.setAttribute('aria-labelledby','mobile-performance-message');
