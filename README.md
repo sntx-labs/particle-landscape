@@ -107,3 +107,9 @@ Built with:
 - [Three.js](https://threejs.org/) - 3D graphics library
 - [Tweakpane](https://cocopon.github.io/tweakpane/) - UI controls
 
+
+## Custom implementation
+
+Want an experience like this, designed for your product? Work with Syntax on a custom implementation: [sntx.co](https://sntx.co/).
+
+Follow [@taylor_sntx](https://x.com/taylor_sntx) for more experiments.
